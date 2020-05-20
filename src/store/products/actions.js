@@ -16,7 +16,6 @@ export const fetchProducts = () => async (dispatch, getState) => {
     const response = await axios.get(
       "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
     );
-    console.log("data in thunk actions!", response.data);
     dispatch(productsFetched(response.data));
   } catch (error) {
     console.log(error);

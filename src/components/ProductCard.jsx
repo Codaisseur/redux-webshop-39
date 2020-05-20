@@ -13,7 +13,12 @@ const ProductCard = (props) => {
           justifyContent: "center",
         }}
       >
-        <button style={{ width: 100, height: 40, marginRight: 10 }}>Add</button>
+        <button
+          style={{ width: 100, height: 40, marginRight: 10 }}
+          onClick={props.onAddClick}
+        >
+          Add
+        </button>
         <button>Remove</button>
       </div>
     </div>
